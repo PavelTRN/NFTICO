@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFTICO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link href="./css/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-items">
+            <span class="preloader-item"></span>
+            <span class="preloader-item"></span>
+            <span class="preloader-item"></span>
+            <span class="preloader-item"></span>
+        </div>
+    </div>
+    <!-- Sprite -->
+    <svg style="display: none;">
+        <symbol id="shape-1" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.65065 2.66665C8.16063 2.66665 7.76342 3.0646 7.76342 3.55552V4.26673H10.6469V6.9778H7.71903V8.13336C7.71903 10.2689 5.9911 12 3.85951 12C1.72798 12 0 10.2689 0 8.13336C0 5.9979 1.72798 4.26673 3.85951 4.26673H5.10167V3.55552C5.10167 1.59189 6.69059 0 8.65065 0H12V2.66665H8.65065ZM5.10156 4.28893V6.97787H7.71893V4.28893H5.10156ZM2.66162 8.13348C2.66162 7.47073 3.19791 6.93351 3.85939 6.93351H5.05721V8.13348C5.05721 8.79624 4.52093 9.33346 3.85939 9.33346C3.19791 9.33346 2.66162 8.79624 2.66162 8.13348Z"
+                fill="#03DB80" />
+        </symbol>
+        <symbol id="shape-2" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.50058 0V4.43595L0.438046 5.9027L3.50058 4.43683V8.28813L0.00257292 6.11126L0.00246094 6.1113L0.00249827 6.11122L0.00246094 6.11118L0.00253559 6.11114L3.50058 0ZM3.50137 0L6.99986 6.11114L6.99997 6.11118L6.99993 6.11122L6.99997 6.1113L6.99986 6.11126L3.50137 8.28813V4.43683L6.56431 5.9027L3.50137 4.43595V0ZM3.50046 8.98586V12L0 6.8094L3.50046 8.98586ZM3.50137 12V8.98539L6.99997 6.80945L3.50137 12Z"
+                fill="#03DB80" />
+        </symbol>
+        <symbol id="facebook" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M8.06831 21.6665V11.9353H11.3347L11.8237 8.14293H8.06831V5.7216C8.06831 4.62363 8.37325 3.87531 9.94787 3.87531L11.9561 3.87438V0.482525C11.6086 0.436476 10.4166 0.333252 9.02978 0.333252C6.13437 0.333252 4.15211 2.10052 4.15211 5.3462V8.14303H0.877289V11.9354H4.15201V21.6666L8.06831 21.6665Z"
+                fill="white" />
+        </symbol>
+        <symbol id="twitter" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.8417 4.54175C17.8417 4.71675 17.8417 4.89175 17.8417 5.04175C17.8417 10.2167 13.8917 16.1917 6.69166 16.1917C4.46666 16.1917 2.41666 15.5417 0.666656 14.4417C0.966656 14.4667 1.29166 14.4917 1.59166 14.4917C3.41666 14.4917 5.11666 13.8667 6.46666 12.8167C4.74166 12.7917 3.29166 11.6417 2.81666 10.0917C3.06666 10.1417 3.29166 10.1667 3.56666 10.1667C3.91666 10.1667 4.26666 10.1167 4.59166 10.0167C2.79166 9.66675 1.44166 8.09175 1.44166 6.19175C1.44166 6.16675 1.44166 6.16675 1.44166 6.14175C1.96666 6.44175 2.56666 6.61675 3.21666 6.64175C2.16666 5.94175 1.46666 4.74175 1.46666 3.36675C1.46666 2.64175 1.66666 1.96675 1.99166 1.39175C3.91666 3.76675 6.81666 5.31675 10.0667 5.49175C9.99166 5.21675 9.96666 4.89175 9.96666 4.59175C9.96666 2.41675 11.7167 0.666748 13.8917 0.666748C15.0167 0.666748 16.0417 1.14175 16.7417 1.89175C17.6417 1.71675 18.4667 1.39175 19.2417 0.941748C18.9417 1.86675 18.3167 2.61675 17.5167 3.11675C18.3167 3.01675 19.0667 2.81675 19.7667 2.49175C19.2667 3.29175 18.6167 3.99175 17.8417 4.54175Z"
+                fill="white" />
+        </symbol>
+        <symbol id="instagram" width="20" height="20" viewBox="0 0 20 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9.99731 6.66525C8.16111 6.66525 6.66262 8.16376 6.66262 10C6.66262 11.8362 8.16111 13.3348 9.99731 13.3348C11.8335 13.3348 13.332 11.8362 13.332 10C13.332 8.16376 11.8335 6.66525 9.99731 6.66525ZM19.9989 10C19.9989 8.61907 20.0114 7.25064 19.9338 5.87221C19.8563 4.27113 19.4911 2.85017 18.3203 1.67938C17.147 0.506085 15.7286 0.14334 14.1275 0.065788C12.7466 -0.0117644 11.3782 0.000744113 9.99981 0.000744113C8.61891 0.000744113 7.25051 -0.0117644 5.8721 0.065788C4.27105 0.14334 2.85012 0.508587 1.67935 1.67938C0.506076 2.85267 0.143338 4.27113 0.0657868 5.87221C-0.0117642 7.25314 0.000744099 8.62157 0.000744099 10C0.000744099 11.3784 -0.0117642 12.7494 0.0657868 14.1278C0.143338 15.7289 0.508578 17.1498 1.67935 18.3206C2.85262 19.4939 4.27105 19.8567 5.8721 19.9342C7.25301 20.0118 8.62141 19.9993 9.99981 19.9993C11.3807 19.9993 12.7491 20.0118 14.1275 19.9342C15.7286 19.8567 17.1495 19.4914 18.3203 18.3206C19.4936 17.1473 19.8563 15.7289 19.9338 14.1278C20.0139 12.7494 19.9989 11.3809 19.9989 10ZM9.99731 15.131C7.15795 15.131 4.86644 12.8394 4.86644 10C4.86644 7.16058 7.15795 4.86903 9.99731 4.86903C12.8367 4.86903 15.1282 7.16058 15.1282 10C15.1282 12.8394 12.8367 15.131 9.99731 15.131ZM15.3383 5.8572C14.6754 5.8572 14.14 5.32184 14.14 4.65889C14.14 3.99594 14.6754 3.46058 15.3383 3.46058C16.0013 3.46058 16.5366 3.99594 16.5366 4.65889C16.5368 4.81631 16.5059 4.97222 16.4458 5.1177C16.3856 5.26317 16.2974 5.39535 16.1861 5.50666C16.0748 5.61798 15.9426 5.70624 15.7971 5.76639C15.6516 5.82654 15.4957 5.8574 15.3383 5.8572Z"
+                fill="white" />
+        </symbol>
+        <symbol id="in" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M9.99731 6.66525C8.16111 6.66525 6.66262 8.16376 6.66262 10C6.66262 11.8362 8.16111 13.3348 9.99731 13.3348C11.8335 13.3348 13.332 11.8362 13.332 10C13.332 8.16376 11.8335 6.66525 9.99731 6.66525ZM19.9989 10C19.9989 8.61907 20.0114 7.25064 19.9338 5.87221C19.8563 4.27113 19.4911 2.85017 18.3203 1.67938C17.147 0.506085 15.7286 0.14334 14.1275 0.065788C12.7466 -0.0117644 11.3782 0.000744113 9.99981 0.000744113C8.61891 0.000744113 7.25051 -0.0117644 5.8721 0.065788C4.27105 0.14334 2.85012 0.508587 1.67935 1.67938C0.506076 2.85267 0.143338 4.27113 0.0657868 5.87221C-0.0117642 7.25314 0.000744099 8.62157 0.000744099 10C0.000744099 11.3784 -0.0117642 12.7494 0.0657868 14.1278C0.143338 15.7289 0.508578 17.1498 1.67935 18.3206C2.85262 19.4939 4.27105 19.8567 5.8721 19.9342C7.25301 20.0118 8.62141 19.9993 9.99981 19.9993C11.3807 19.9993 12.7491 20.0118 14.1275 19.9342C15.7286 19.8567 17.1495 19.4914 18.3203 18.3206C19.4936 17.1473 19.8563 15.7289 19.9338 14.1278C20.0139 12.7494 19.9989 11.3809 19.9989 10ZM9.99731 15.131C7.15795 15.131 4.86644 12.8394 4.86644 10C4.86644 7.16058 7.15795 4.86903 9.99731 4.86903C12.8367 4.86903 15.1282 7.16058 15.1282 10C15.1282 12.8394 12.8367 15.131 9.99731 15.131ZM15.3383 5.8572C14.6754 5.8572 14.14 5.32184 14.14 4.65889C14.14 3.99594 14.6754 3.46058 15.3383 3.46058C16.0013 3.46058 16.5366 3.99594 16.5366 4.65889C16.5368 4.81631 16.5059 4.97222 16.4458 5.1177C16.3856 5.26317 16.2974 5.39535 16.1861 5.50666C16.0748 5.61798 15.9426 5.70624 15.7971 5.76639C15.6516 5.82654 15.4957 5.8574 15.3383 5.8572Z"
+                fill="white" />
+        </symbol>
+    </svg>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header-logo">
+                    <span class="header-logo__icon" data-letter="N"></span>
+                    <h2 class="header-logo__title">NFTICO</h2>
+                </div>
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Explore</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Stats</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Drops</a></li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">Activity</a></li>
+                    </ul>
+                    <form action="" class="search-form">
+                        <div class="search-form__item">
+                            <input name="search" type="search" class="search-form__input" placeholder="Search..." />
+                            <button type="button" class="search-form__clear" aria-label="Clear search">
+                                <i class="bi bi-x-lg search-form__icon search-form__icon--clear"></i>
+                                <i class="bi bi-search search-form__icon search-form__icon--search"></i>
+                            </button>
+
+                        </div>
+                        <button type="button" class="button button--border button--enable search-form__btn"><span
+                                class="button-text">Get in Touch</span></button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- End Header -->
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="blur-container">
+            <div class="blur-ball hero__ball"></div>
+        </div>
+        <div class="container">
+            <div class="hero__wrap">
+                <div class="hero__body">
+                    <i class="bi bi-hexagon hero__hexagon"></i>
+                    <i class="bi bi-square-fill hero__square hero__square--lavande"></i>
+                    <i class="bi bi-square-fill hero__square hero__square--coral"></i>
+                    <div class="hero-content">
+                        <h1 class="hero-content__title">Discover, collect, and sell extraordinary <span>NFTs</span>
+                        </h1>
+                        <p class="hero-content__subtitle">Our marketplace is the world’s first and largest NFT market
+                            for
+                            independent creators worldwide </p>
+                        <div class="hero-content__actions">
+                            <button type="button" class="button button--border button--enable hero-content__btn"><span
+                                    class="button-text">Explore</span></button>
+                            <button type="button" class="button button--border hero-content__btn"><span
+                                    class="button-text">Create</span></button>
+                        </div>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=OpT4eosEDmw"
+                            class=" hero-content__link">
+                            <i class="bi bi-play-circle-fill hero-content__icon hero-content__icon--play"></i>Learn more
+                            about Nftico</a>
+                    </div>
+                    <div class="hero-slider">
+                        <div class="hero-slider__thumbs">
+                            <figure class="hero-slider__thumb hero-slider__thumb--small">
+                                <img src="./img/hero/img-1.jpg" alt=""
+                                    class="hero-slider__img hero-slider__img--thumb hero-slider__img--small">
+                            </figure>
+                            <figure class="hero-slider__thumb hero-slider__thumb--big">
+                                <img src="./img/hero/img-2.jpg" alt=""
+                                    class="hero-slider__img hero-slider__img--thumb hero-slider__img--big">
+                            </figure>
+                        </div>
+                        <div class="hero-slider__main">
+                            <button class="hero-slider__btn">
+                                <i class="bi bi-arrow-right hero-slider__icon"></i>
+                            </button>
+                            <figure class="hero-slider__figure">
+                                <img src="./img/hero/img-3.jpg" alt="" class="hero-slider__img">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="hero-pagination">
+                        <span class="hero-pagination__item active"></span>
+                        <span class="hero-pagination__item"></span>
+                        <span class="hero-pagination__item"></span>
+                        <span class="hero-pagination__item"></span>
+                    </div>
+                </div>
+                <div class="hero__footer">
+                    <div class="hero-rating">
+                        <div class="hero-rating__item">
+                            <p class="hero__label">We will take all the worry and guesswork out of your blockchain and
+                                cryptocurrency concerns.</p>
+                        </div>
+                        <div class="hero-rating__item">
+                            <span class="hero-rating__value active">30.000+</span>
+                            <h4 class="hero-rating__title">World Arts</h4>
+                        </div>
+                        <div class="hero-rating__item">
+                            <span class="hero-rating__value">18.000+</span>
+                            <h4 class="hero-rating__title">Digital Artists</h4>
+                        </div>
+                        <div class="hero-rating__item">
+                            <span class="hero-rating__value">22.000+</span>
+                            <h4 class="hero-rating__title">Live Auctions</h4>
+                        </div>
+                        <div class="hero-rating__item">
+                            <span class="hero-rating__value">55.000+</span>
+                            <h4 class="hero-rating__title">Unique Products</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <!-- Selected -->
+    <section class="selected">
+        <div class="blur-container">
+            <div class="blur-ball selected__ball"></div>
+        </div>
+        <div class="container">
+            <div class="selected__wrap">
+                <div class="selected__header">
+                    <h2 class="selected__title section-title" data-bgText="NFTs">Selected notable drops</h2>
+                </div>
+                <div class="product-cards selected-cards">
+                    <!-- Card-1 -->
+                    <div class="product-card selected-card">
+                        <figure class="card-figure selected-card__figure">
+                            <img src="./img/selected/1.jpg" alt="nft" class="card-img selected-card__img">
+                        </figure>
+                        <div class="selected-card__body">
+                            <div class="selected-card__item">
+                                <h3 class="product-title selected-card__title">Science Jobs</h3>
+                                <div class="like-wrap selected-like">
+                                    <button class="like-btn like-btn--heart selected-like__btn">
+                                        <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                        <span class="like-value">32</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="selected-card__item">
+                                <span class="selected-card__label">
+                                    <svg class="selected-card__icon ">
+                                        <use xlink:href="#shape-1"></use>
+                                    </svg>From 17.59 Flow</span>
+                                <div class="tumbs-img selected-card__thumbs">
+                                    <img src="./img/selected/thumb-1.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-2.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-3.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-card__actions">
+                            <button type="button" class="button button--border selected-card__btn">
+                                <span class="button-text">Live now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Card-1 -->
+
+                    <!-- Card-2 -->
+                    <div class="product-card selected-card">
+                        <figure class="card-figure selected-card__figure">
+                            <img src="./img/selected/2.jpg" alt="nft" class="card-img selected-card__img">
+                        </figure>
+                        <div class="selected-card__body">
+                            <div class="selected-card__item">
+                                <h3 class="product-title selected-card__title">Science Jobs</h3>
+                                <div class="like-wrap selected-like">
+                                    <button class="like-btn like-btn--heart selected-like__btn">
+                                        <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                        <span class="like-value">32</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="selected-card__item">
+                                <span class="selected-card__label">
+                                    <svg class="selected-card__icon ">
+                                        <use xlink:href="#shape-1"></use>
+                                    </svg>From 17.59 Flow</span>
+                                <div class="tumbs-img selected-card__thumbs">
+                                    <img src="./img/selected/thumb-1.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-2.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-3.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-card__actions">
+                            <button type="button" class="button button--border selected-card__btn">
+                                <span class="button-text">Live now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Card-2 -->
+
+                    <!-- Card-3 -->
+                    <div class="product-card selected-card">
+                        <figure class="card-figure selected-card__figure">
+                            <img src="./img/selected/3.jpg" alt="nft" class="card-img selected-card__img">
+                        </figure>
+                        <div class="selected-card__body">
+                            <div class="selected-card__item">
+                                <h3 class="product-title selected-card__title">Science Jobs</h3>
+                                <div class="like-wrap selected-like">
+                                    <button class="like-btn like-btn--heart selected-like__btn">
+                                        <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                        <span class="like-value">32</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="selected-card__item">
+                                <span class="selected-card__label">
+                                    <svg class="selected-card__icon ">
+                                        <use xlink:href="#shape-1"></use>
+                                    </svg>From 17.59 Flow</span>
+                                <div class="tumbs-img selected-card__thumbs">
+                                    <img src="./img/selected/thumb-1.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-2.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-3.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-card__actions">
+                            <button type="button" class="button button--border selected-card__btn">
+                                <span class="button-text">Live now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Card-3 -->
+
+                    <!-- Card-4 -->
+                    <div class="product-card selected-card">
+                        <figure class="card-figure selected-card__figure">
+                            <img src="./img/selected/4.jpg" alt="nft" class="card-img selected-card__img">
+                        </figure>
+                        <div class="selected-card__body">
+                            <div class="selected-card__item">
+                                <h3 class="product-title selected-card__title">Science Jobs</h3>
+                                <div class="like-wrap selected-like">
+                                    <button class="like-btn like-btn--heart selected-like__btn">
+                                        <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                        <span class="like-value">32</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="selected-card__item">
+                                <span class="selected-card__label">
+                                    <svg class="selected-card__icon ">
+                                        <use xlink:href="#shape-1"></use>
+                                    </svg>From 17.59 Flow</span>
+                                <div class="tumbs-img selected-card__thumbs">
+                                    <img src="./img/selected/thumb-1.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-2.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                    <img src="./img/selected/thumb-3.jpg" alt="people"
+                                        class="thumb-img selected-card__thumb">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selected-card__actions">
+                            <button type="button" class="button button--border selected-card__btn">
+                                <span class="button-text">Live now</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- End Card-4 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Selected -->
+
+    <!-- Collections -->
+    <section class="collections">
+        <div class="container">
+            <div class="collections__wrap">
+                <div class="collections__header">
+                    <h2 class="selected__title section-title" data-bgText="NFTs">Top collections <i
+                            class="bi bi-caret-down-fill selected__icon selected__icon--arrow selected__icon--title"></i>
+                    </h2>
+                    <div class="collections-filter">
+                        <button type="button" data-filter="1" class="button button--border collections-filter__btn">
+                            <span class="button-text">1 DAY
+                                <i class="bi bi-caret-down-fill selected__icon selected__icon--arrow"></i>
+                            </span>
+                        </button>
+                        <button type="button" data-filter="7"
+                            class="button button--border collections-filter__btn active">
+                            <span class="button-text">7 DAYS
+                                <i class="bi bi-caret-down-fill selected__icon selected__icon--arrow"></i>
+                            </span>
+                        </button>
+                        <button type="button" data-filter="30" class="button button--border collections-filter__btn">
+                            <span class="button-text">30 DAYS
+                                <i class="bi bi-caret-down-fill selected__icon selected__icon--arrow"></i>
+                            </span>
+                        </button>
+                        <button type="button" data-filter="all" class="button button--border collections-filter__btn">
+                            <span class="button-text">Ethereum
+                                <i class="bi bi-caret-down-fill selected__icon selected__icon--arrow"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-cards collections-cards">
+                    <!-- Card-1 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/1.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Bored Ape Yacht Club</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">2.9k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-1 -->
+
+                    <!-- Card-2 -->
+                    <div class="product-card product-card--border collections-card active">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/2.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Chromie Squiggle </h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>19,320.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">2.7k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-2 -->
+
+                    <!-- Card-3 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/3.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Worlwide Webb Land</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">2.9k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-3 -->
+
+                    <!-- Card-4 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/4.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Bored Ape Chemistry </h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">2.5k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-4 -->
+
+                    <!-- Card-5 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/5.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Bored Ape Kennel Club</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">1.9k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-5 -->
+
+                    <!-- Card-6 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/6.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Brick-and-Mortar</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">1.9k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-6 -->
+
+                    <!-- Card-7 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/7.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">RTFKT CloneX Mintvial</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">1.9k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-7 -->
+
+                    <!-- Card-8 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/8.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Psychedelics Anonymous</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">1.4k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-8 -->
+
+                    <!-- Card-9 -->
+                    <div class="product-card product-card--border collections-card">
+                        <div class="collections-card__inner">
+                            <figure class="card-figure collections-card__figure">
+                                <img src="./img/collections/9.jpg" alt="nft" class="card-img collections-card__img">
+                            </figure>
+                            <div class="collections-card__body">
+                                <div class="collections-card__item">
+                                    <h3 class="product-title collections-card__title">Free Way to Back Up</h3>
+                                    <span class="collections-card__label">
+                                        <svg class="collections-card__icon">
+                                            <use xlink:href="#shape-1"></use>
+                                        </svg>10,450.00</span>
+                                </div>
+                                <div class="collections-card__item">
+                                    <span class="collections-card__price">2.5k ETH</span>
+                                    <span class="collections-card__rating">+10.00%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-9 -->
+                </div>
+                <div class="collections__actions">
+                    <button type="button" class="button button--border collections__btn button--enable"><span
+                            class="button-text">See All Collections</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Collections -->
+
+    <!-- Trending -->
+    <section class="trending">
+        <div class="blur-container">
+            <div class="blur-ball trending__ball"></div>
+        </div>
+        <div class="container">
+            <div class="trending__wrap">
+                <div class="trending__header">
+                    <h2 class="trending__title section-title" data-bgText="NFTs">Trending NFTs</h2>
+                </div>
+                <div class="product-cards trending-cards">
+                    <!-- Card-1 -->
+                    <div class="product-card product-card--border trending-card">
+                        <div class="trending-card__inner">
+                            <figure class="card-figure trending-card__figure">
+                                <img src="./img/trending/1.jpg" alt="nft" class="card-img trending-card__img">
+                                <div class="trending-card__actions">
+                                    <div class="like-wrap trending-like">
+                                        <button class="like-btn trending-like__btn trending-like__btn--share">
+                                            <i class="bi bi-arrow-clockwise"></i>
+                                        </button>
+                                        <button class="like-btn like-btn--heart trending-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                    <button type="button"
+                                        class="button button--border trending-card__btn button--enable"><span
+                                            class="button-text">Live now</span></button>
+                                </div>
+                            </figure>
+                            <div class="trending-card__body">
+                                <div class="trending-card__top">
+                                    <h4 class="trending-card__author">By Ya Chin-Ho
+                                        <i
+                                            class="bi bi-check-circle-fill trending-card__icon trending-card__icon--check"></i>
+                                    </h4>
+                                    <h3 class="product-title trending-card__title">Science Jobs</h3>
+                                </div>
+                                <dl class="trending-card__info">
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">From</dt>
+                                        <dd class="trending-card__value">Not for sale</dd>
+                                    </div>
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">Highest bid</dt>
+                                        <dd class="trending-card__value">2.835 ETH</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Card-1 -->
+
+                    <!-- Card-2 -->
+                    <div class="product-card product-card--border trending-card">
+                        <div class="trending-card__inner">
+                            <figure class="card-figure trending-card__figure">
+                                <img src="./img/trending/2.jpg" alt="nft" class="card-img trending-card__img">
+                                <div class="trending-card__actions">
+                                    <div class="like-wrap trending-like">
+                                        <button class="like-btn trending-like__btn trending-like__btn--share">
+                                            <i class="bi bi-arrow-clockwise"></i>
+                                        </button>
+                                        <button class="like-btn like-btn--heart trending-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                    <button type="button"
+                                        class="button button--border trending-card__btn button--enable"><span
+                                            class="button-text">Live now</span></button>
+                                </div>
+                            </figure>
+                            <div class="trending-card__body">
+                                <div class="trending-card__top">
+                                    <h4 class="trending-card__author">By Ya Chin-Ho
+                                        <i
+                                            class="bi bi-check-circle-fill trending-card__icon trending-card__icon--check"></i>
+                                    </h4>
+                                    <h3 class="product-title trending-card__title">Science Jobs</h3>
+                                </div>
+                                <dl class="trending-card__info">
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">From</dt>
+                                        <dd class="trending-card__value">Not for sale</dd>
+                                    </div>
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">Highest bid</dt>
+                                        <dd class="trending-card__value">2.835 ETH</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Card-2 -->
+
+                    <!-- Card-3 -->
+                    <div class="product-card product-card--border trending-card">
+                        <div class="trending-card__inner">
+                            <figure class="card-figure trending-card__figure">
+                                <img src="./img/trending/3.jpg" alt="nft" class="card-img trending-card__img">
+                                <div class="trending-card__actions">
+                                    <div class="like-wrap trending-like">
+                                        <button class="like-btn trending-like__btn trending-like__btn--share">
+                                            <i class="bi bi-arrow-clockwise"></i>
+                                        </button>
+                                        <button class="like-btn like-btn--heart trending-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                    <button type="button"
+                                        class="button button--border trending-card__btn button--enable"><span
+                                            class="button-text">Live now</span></button>
+                                </div>
+                            </figure>
+                            <div class="trending-card__body">
+                                <div class="trending-card__top">
+                                    <h4 class="trending-card__author">By Ya Chin-Ho
+                                        <i
+                                            class="bi bi-check-circle-fill trending-card__icon trending-card__icon--check"></i>
+                                    </h4>
+                                    <h3 class="product-title trending-card__title">Science Jobs</h3>
+                                </div>
+                                <dl class="trending-card__info">
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">From</dt>
+                                        <dd class="trending-card__value">Not for sale</dd>
+                                    </div>
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">Highest bid</dt>
+                                        <dd class="trending-card__value">2.835 ETH</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Card-3 -->
+
+                    <!-- Card-4 -->
+                    <div class="product-card product-card--border trending-card">
+                        <div class="trending-card__inner">
+                            <figure class="card-figure trending-card__figure">
+                                <img src="./img/trending/4.jpg" alt="nft" class="card-img trending-card__img">
+                                <div class="trending-card__actions">
+                                    <div class="like-wrap trending-like">
+                                        <button class="like-btn trending-like__btn trending-like__btn--share">
+                                            <i class="bi bi-arrow-clockwise"></i>
+                                        </button>
+                                        <button class="like-btn like-btn--heart trending-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                    <button type="button"
+                                        class="button button--border trending-card__btn button--enable"><span
+                                            class="button-text">Live now</span></button>
+                                </div>
+                            </figure>
+                            <div class="trending-card__body">
+                                <div class="trending-card__top">
+                                    <h4 class="trending-card__author">By Ya Chin-Ho
+                                        <i
+                                            class="bi bi-check-circle-fill trending-card__icon trending-card__icon--check"></i>
+                                    </h4>
+                                    <h3 class="product-title trending-card__title">Science Jobs</h3>
+                                </div>
+                                <dl class="trending-card__info">
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">From</dt>
+                                        <dd class="trending-card__value">Not for sale</dd>
+                                    </div>
+                                    <div class="trending-card__item">
+                                        <dt class="trending-card__name">Highest bid</dt>
+                                        <dd class="trending-card__value">2.835 ETH</dd>
+                                    </div>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Card-4 -->
+
+                </div>
+                <div class="trending__footer">
+                    <div class="trending-pagination">
+                        <div class="trending-pagination__item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Trending -->
+
+    <!-- Resouces -->
+    <section class="resouces">
+        <div class="blur-container">
+            <div class="blur-ball resouces__ball"></div>
+        </div>
+        <div class="container">
+            <div class="resouces__wrap">
+                <div class="resouces__header">
+                    <h2 class="resouces__title section-title" data-bgText="NFTs">Resouces for getting started</h2>
+                </div>
+                <div class="resouces-cards">
+                    <!-- Card-1 -->
+                    <div class="resouces-card resouces-card--big">
+                        <figure class="resouces-card__figure  resouces-card__figure--big">
+                            <img src="./img/resouces/1.jpg" alt="NFT" class="resouces-card__img">
+                        </figure>
+                        <div class="resouces-card__content resouces-card__content--big">
+                            <ul class="resouces-card__header">
+                                <li class="resouces-card__category">NFT Token</li>
+                                <li class="resouces-card__comment"><i class="bi bi-chat-dots"></i> No Comment</li>
+                            </ul>
+                            <h4 class="resouces-card__title">The Seven Secrets I should have received NFTs.</h4>
+                            <div class="resouces-author">
+                                <div class="resouces-author__thumb">
+                                    <img src="./img/resouces/author-1.jpg" alt="Election Season"
+                                        class="resouces-author__img">
+                                </div>
+                                <div class="resouces-author__info">
+                                    <h3 class="resouces-author__name">Election Season</h3>
+                                    <span class="resouces-author__data">June 2, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-1 -->
+
+                    <!-- Card-2 -->
+                    <div class="resouces-card">
+                        <figure class="resouces-card__figure">
+                            <img src="./img/resouces/2.jpg" alt="NFT" class="resouces-card__img">
+                        </figure>
+                        <div class="resouces-card__content">
+                            <ul class="resouces-card__header">
+                                <li class="resouces-card__category">Game</li>
+                                <li class="resouces-card__category">NFT </li>
+                                <li class="resouces-card__comment"><i class="bi bi-chat-dots"></i> No Comment</li>
+                            </ul>
+                            <h4 class="resouces-card__title">I think I minted duplicate NFTs</h4>
+                            <div class="resouces-author">
+                                <div class="resouces-author__thumb">
+                                    <img src="./img/resouces/author-2.jpg" alt="Election Season"
+                                        class="resouces-author__img">
+                                </div>
+                                <div class="resouces-author__info">
+                                    <h3 class="resouces-author__name">Courtney Henry</h3>
+                                    <span class="resouces-author__data">May 27, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-2 -->
+
+                    <!-- Card-3 -->
+                    <div class="resouces-card">
+                        <figure class="resouces-card__figure">
+                            <img src="./img/resouces/3.jpg" alt="NFT" class="resouces-card__img">
+                        </figure>
+                        <div class="resouces-card__content">
+                            <ul class="resouces-card__header">
+                                <li class="resouces-card__category">NFT Token</li>
+                                <li class="resouces-card__category">NFT </li>
+                                <li class="resouces-card__comment"><i class="bi bi-chat-dots"></i> No Comment</li>
+                            </ul>
+                            <h4 class="resouces-card__title">The Marketplace isn’t working</h4>
+                            <div class="resouces-author">
+                                <div class="resouces-author__thumb">
+                                    <img src="./img/resouces/author-3.jpg" alt="Election Season"
+                                        class="resouces-author__img">
+                                </div>
+                                <div class="resouces-author__info">
+                                    <h3 class="resouces-author__name">Courtney Henry</h3>
+                                    <span class="resouces-author__data">May 27, 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-3 -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Resouces -->
+
+    <!-- Popular -->
+    <section class="popular">
+        <div class="container">
+            <div class="popular__wrap">
+                <div class="popular__header">
+                    <h2 class="popular__title section-title" data-bgText="NFTs">Browse popular NFTs</h2>
+                    <div class="popular-filter">
+                        <button type="button"
+                            class="button button--border popular-filter__btn active button--clear"><span
+                                class="button-text">All NFTs</span></button>
+                        <button type="button" class="button button--border popular-filter__btn button--clear"><span
+                                class="button-text">Art</span></button>
+                        <button type="button" class="button button--border popular-filter__btn button--clear"><span
+                                class="button-text">Games</span></button>
+                        <button type="button" class="button button--border popular-filter__btn button--clear"><span
+                                class="button-text">Sports</span></button>
+                        <button type="button" class="button button--border popular-filter__btn button--clear"><span
+                                class="button-text">Tranding Cards</span></button>
+                    </div>
+                </div>
+                <div class="product-cards popular-cards">
+                    <!-- Card-1 -->
+                    <div class="product-card product-card--border popular-card">
+                        <div class="popular-card__inner">
+                            <figure class="card-figure popular-card__figure">
+                                <img src="./img/popular/1.jpg" alt="nft" class="card-img popular-card__img">
+                            </figure>
+                            <div class="popular-card__body">
+                                <div class="popular-card__top">
+                                    <h3 class="product-title popular-card__title">Election Season</h3>
+                                </div>
+                                <div class="popular-card__info">
+                                    <span class="popular-card__label">
+                                        <svg class="popular-card__icon">
+                                            <use xlink:href="#shape-2"></use>
+                                        </svg><span>From</span>0.05 ETH</span>
+                                    <div class="like-wrap popular-like">
+                                        <button class="like-btn like-btn--heart popular-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-card__actions">
+                                <button type="button" class="button button--border popular-card__btn"><span
+                                        class="button-text">Place bid</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-1 -->
+
+                    <!-- Card-2 -->
+                    <div class="product-card product-card--border popular-card">
+                        <div class="popular-card__inner">
+                            <figure class="card-figure popular-card__figure">
+                                <img src="./img/popular/2.jpg" alt="nft" class="card-img popular-card__img">
+                            </figure>
+                            <div class="popular-card__body">
+                                <div class="popular-card__top">
+                                    <h3 class="product-title popular-card__title">Election Season</h3>
+                                </div>
+                                <div class="popular-card__info">
+                                    <span class="popular-card__label">
+                                        <svg class="popular-card__icon">
+                                            <use xlink:href="#shape-2"></use>
+                                        </svg><span>From</span>0.05 ETH</span>
+                                    <div class="like-wrap popular-like">
+                                        <button class="like-btn like-btn--heart popular-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-card__actions">
+                                <button type="button" class="button button--border popular-card__btn"><span
+                                        class="button-text">Place bid</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-2 -->
+
+                    <!-- Card-3 -->
+                    <div class="product-card product-card--border popular-card">
+                        <div class="popular-card__inner">
+                            <figure class="card-figure popular-card__figure">
+                                <img src="./img/popular/3.jpg" alt="nft" class="card-img popular-card__img">
+                            </figure>
+                            <div class="popular-card__body">
+                                <div class="popular-card__top">
+                                    <h3 class="product-title popular-card__title">Election Season</h3>
+                                </div>
+                                <div class="popular-card__info">
+                                    <span class="popular-card__label">
+                                        <svg class="popular-card__icon">
+                                            <use xlink:href="#shape-2"></use>
+                                        </svg><span>From</span>0.05 ETH</span>
+                                    <div class="like-wrap popular-like">
+                                        <button class="like-btn like-btn--heart popular-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-card__actions">
+                                <button type="button" class="button button--border popular-card__btn"><span
+                                        class="button-text">Place bid</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-3 -->
+
+                    <!-- Card-4 -->
+                    <div class="product-card product-card--border popular-card">
+                        <div class="popular-card__inner">
+                            <figure class="card-figure popular-card__figure">
+                                <img src="./img/popular/4.jpg" alt="nft" class="card-img popular-card__img">
+                            </figure>
+                            <div class="popular-card__body">
+                                <div class="popular-card__top">
+                                    <h3 class="product-title popular-card__title">Election Season</h3>
+                                </div>
+                                <div class="popular-card__info">
+                                    <span class="popular-card__label">
+                                        <svg class="popular-card__icon">
+                                            <use xlink:href="#shape-2"></use>
+                                        </svg><span>From</span>0.05 ETH</span>
+                                    <div class="like-wrap popular-like">
+                                        <button class="like-btn like-btn--heart popular-like__btn">
+                                            <i class="bi bi-heart like-icon like-icon--heart"></i>
+                                            <span class="like-value">32</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-card__actions">
+                                <button type="button" class="button button--border popular-card__btn"><span
+                                        class="button-text">Place bid</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Card-4 -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Popular -->
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="about__body">
+                <div class="about__figure"><img src="./img/about/1.png" alt="" class="figure__img"></div>
+                <div class="about-content">
+                    <h2 class="about-content__title">Create, Sell well & Collect Your Best Very Fast NFTs.</h2>
+                    <p class="about-content__text">Create, Sell well & Collect Your Best Very Fast NFTs.The purpose of
+                        lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that
+                        doesn't distract from the layout. A practice not without controversy, laying out pages with
+                        meaningless</p>
+                    <div class="about-content__actions">
+                        <button type="button" class="button button--border button--enable popular-card__btn"><span
+                                class="button-text">Connect Wallet</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="about__footer">
+                <div class="brands-list">
+                    <div class="brand-item">
+                        <img src="./img/brands/1.png" alt="" class="brand-icon">
+                    </div>
+                    <div class="brand-item">
+                        <img src="./img/brands/2.png" alt="" class="brand-icon">
+                    </div>
+                    <div class="brand-item">
+                        <img src="./img/brands/3.png" alt="" class="brand-icon">
+                    </div>
+                    <div class="brand-item">
+                        <img src="./img/brands/4.png" alt="" class="brand-icon">
+                    </div>
+                    <div class="brand-item">
+                        <img src="./img/brands/5.png" alt="" class="brand-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="round-shadow footer__round"></div>
+
+                <nav class="footer-nav" aria-label="Marketplace navigation">
+                    <!-- Section-1 -->
+                    <div class="footer-nav__section">
+                        <h3 class="footer-nav__title">Marketplace</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Explore</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Help Center</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Become a Partner</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">About Us</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Platform Status</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Section-1 -->
+
+                    <!-- Section-2 -->
+                    <div class="footer-nav__section">
+                        <h3 class="footer-nav__title">Community</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Profile</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Favorites</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Watchlist</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">My Collections</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Rankings</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Activity</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Section-2 -->
+
+                    <!-- Section-3 -->
+                    <div class="footer-nav__section">
+                        <h3 class="footer-nav__title">Categories</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Arts</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Collectibles</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Games</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Sports</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Trading Cards</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="#" class="footer-nav__link">Photography</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Section-3 -->
+
+                    <!-- Section-4 -->
+                    <div class="footer-nav__section">
+                        <h3 class="footer-nav__title">Marketplace</h3>
+                        <p class="footer-nav__text">If you’re an NFT enthusiast or are looking to download our NFT App.
+                        </p>
+                        <form action="" class="form-subscribe">
+                            <div class="form-subscribe__item">
+                                <input type="email" class="form-subscribe__input" placeholder="Type Your Email">
+                            </div>
+                            <div class="form-subscribe__action">
+                                <button type="button"
+                                    class="button button--subscribe button--enable form-subscribe__btn"><span
+                                        class="button-text">Subscribe</span></button>
+                            </div>
+                        </form>
+                        <ul class="footer-social">
+                            <li class="footer-social__item">
+                                <a href="https://www.facebook.com/groups/nftcollectors/" target="_blank"
+                                    class="footer-social__link"><i
+                                        class="fa-brands fa-facebook-f footer-social__icon"></i></a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="https://x.com/nftnow" target="_blank" class="footer-social__link"><i
+                                        class="fa-brands fa-twitter footer-social__icon"></i></a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="https://www.instagram.com/nft_community/" target="_blank"
+                                    class="footer-social__link"><i
+                                        class="fa-brands fa-instagram footer-social__icon"></i></a>
+                            </li>
+                            <li class="footer-social__item">
+                                <a href="https://www.linkedin.com/company/nftcommunity" target="_blank"
+                                    class="footer-social__link"><i
+                                        class="fa-brands fa-linkedin-in footer-social__icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Section-4 -->
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="copyright__wrap">
+                <div class="copyright-list">
+                    <a href="#" class="copyright-list__link">Privacy Policy</a>
+                    <a href="#" class="copyright-list__link">License</a>
+                    <a href="#" class="copyright-list__link">API</a>
+                </div>
+                <p class="copyright__text">&copy; <span class="copyright__data"></span> All rights reserved</p>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
